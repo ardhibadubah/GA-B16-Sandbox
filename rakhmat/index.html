@@ -30,8 +30,14 @@
   <div class="container">
     <!-- BANNER  -->
     <section class="text-white bg-primary bg-opacity-75 p-5 mb-4 rounded"> 
-      <h2>Rakhmat N. Wathon</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eveniet ad nam minima, voluptatem, enim ex eaque expedita assumenda, reiciendis excepturi porro in suscipit ab sed quidem. Quae, tempore quos.</p>
+      <h2 id="counter">0</h2>
+      <button id="btn-1" class="btn btn-primary mb-2" onclick="addNumber()">Click ME</button>
+      <button class="btn btn-danger mb-2" onclick="addAlertError()"> Alert Error </button>
+      <button class="btn btn-success mb-2" onclick="addAlertSuccess()"> Alert Success </button>
+
+      <div id="alertContainer"></div>
+
+      <p id="description" oncopy="handleCopy()">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eveniet ad nam minima, voluptatem, enim ex eaque expedita assumenda, reiciendis excepturi porro in suscipit ab sed quidem. Quae, tempore quos.</p>
     </section>
 
     <!-- BLOGPOST -->
